@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/samuel/soft/MPIG0024_simpleDemo/c/core/sqrt.cpp
+sqrt.h
+/home/samuel/soft/MPIG0024_simpleDemo/c/core/sqrt.h
+
+/home/samuel/soft/MPIG0024_simpleDemo/c/core/sqrt.h
+math.h
+-
+
+/home/samuel/soft/MPIG0024_simpleDemo/c/example/demo.cpp
+stdio.h
+-
+../core/sqrt.h
+/home/samuel/soft/MPIG0024_simpleDemo/c/core/sqrt.h
+

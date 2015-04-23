@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/samuel/soft/MPIG0024_simpleDemo/b/include/sqrt.h
+math.h
+-
+
+/home/samuel/soft/MPIG0024_simpleDemo/b/src/sqrt.cpp
+../include/sqrt.h
+/home/samuel/soft/MPIG0024_simpleDemo/b/include/sqrt.h
+
