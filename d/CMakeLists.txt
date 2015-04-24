@@ -2,11 +2,11 @@
 cmake_minimum_required(VERSION 2.8)
 #project name
 PROJECT(demoC)
-#set(CPP_LIST ${})
-#message(STATUS ${CPP_LIST})
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 ADD_SUBDIRECTORY(./core)
 message(STATUS "corecpplistaftercore = ${CORE_CPP_LIST}")
 ADD_SUBDIRECTORY(./example)
+
 #message(STATUS ${EXAM_CPP_LIST})
 #message(STATUS ${CMAKE_BINARY_DIR})
 #message(STATUS ${PROJECT_BINARY_DIR})

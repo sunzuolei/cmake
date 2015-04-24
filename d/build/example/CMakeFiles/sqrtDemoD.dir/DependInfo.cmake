@@ -4,8 +4,8 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/samuel/soft/MPIG0024_simpleDemo/d/core/sqrt.cpp" "/home/samuel/soft/MPIG0024_simpleDemo/d/build/example/CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.o"
-  "/home/samuel/soft/MPIG0024_simpleDemo/d/example/demo.cpp" "/home/samuel/soft/MPIG0024_simpleDemo/d/build/example/CMakeFiles/sqrtDemoD.dir/demo.cpp.o"
+  "/home/sam/cmake/d/core/sqrt.cpp" "/home/sam/cmake/d/build/example/CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.o"
+  "/home/sam/cmake/d/example/demo.cpp" "/home/sam/cmake/d/build/example/CMakeFiles/sqrtDemoD.dir/demo.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/samuel/soft/MPIG0024_simpleDemo/d/example
+# Install script for directory: /home/sam/cmake/d/example
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

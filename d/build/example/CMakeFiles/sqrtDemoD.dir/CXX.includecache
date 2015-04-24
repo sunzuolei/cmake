@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/samuel/soft/MPIG0024_simpleDemo/d/core/sqrt.cpp
+/home/sam/cmake/d/core/sqrt.cpp
 sqrt.h
-/home/samuel/soft/MPIG0024_simpleDemo/d/core/sqrt.h
+/home/sam/cmake/d/core/sqrt.h
 
-/home/samuel/soft/MPIG0024_simpleDemo/d/core/sqrt.h
+/home/sam/cmake/d/core/sqrt.h
 math.h
 -
 
-/home/samuel/soft/MPIG0024_simpleDemo/d/example/demo.cpp
+/home/sam/cmake/d/example/demo.cpp
 stdio.h
 -
 ../core/sqrt.h
-/home/samuel/soft/MPIG0024_simpleDemo/d/core/sqrt.h
+/home/sam/cmake/d/core/sqrt.h
 

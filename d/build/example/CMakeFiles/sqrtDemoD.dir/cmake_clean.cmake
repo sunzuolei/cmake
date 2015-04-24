@@ -1,8 +1,8 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.o"
   "CMakeFiles/sqrtDemoD.dir/demo.cpp.o"
-  "sqrtDemoD.pdb"
-  "sqrtDemoD"
+  "../bin/sqrtDemoD.pdb"
+  "../bin/sqrtDemoD"
 )
 
 # Per-language clean rules from dependency scanning.
