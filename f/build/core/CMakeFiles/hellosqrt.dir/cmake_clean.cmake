@@ -1,4 +1,4 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/hellosqrt.dir/hello/src/sayHello.cpp.o"
   "CMakeFiles/hellosqrt.dir/sqrt/src/sqrt.cpp.o"
   "../../lib/libhellosqrt.pdb"
@@ -6,6 +6,6 @@ FILE(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang CXX)
-  INCLUDE(CMakeFiles/hellosqrt.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang CXX)
+  include(CMakeFiles/hellosqrt.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

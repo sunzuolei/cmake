@@ -10,15 +10,15 @@
 math.h
 -
 
-/home/samuel/soft/MPIG0024_simpleDemo/f/core/hello/include/sayHello.h
+/home/sam/apps/cmake/f/core/hello/include/sayHello.h
 stdio.h
 -
 
-/home/samuel/soft/MPIG0024_simpleDemo/f/core/hello/src/sayHello.cpp
+/home/sam/apps/cmake/f/core/hello/src/sayHello.cpp
 ../include/sayHello.h
-/home/samuel/soft/MPIG0024_simpleDemo/f/core/hello/include/sayHello.h
+/home/sam/apps/cmake/f/core/hello/include/sayHello.h
 
-/home/samuel/soft/MPIG0024_simpleDemo/f/core/sqrt/src/sqrt.cpp
+/home/sam/apps/cmake/f/core/sqrt/src/sqrt.cpp
 sqrt.h
-/home/samuel/soft/MPIG0024_simpleDemo/f/core/sqrt/src/sqrt.h
+/home/sam/apps/cmake/f/core/sqrt/src/sqrt.h
 
