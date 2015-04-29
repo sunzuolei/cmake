@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sam/cmake/d
+CMAKE_SOURCE_DIR = /home/samuel/soft/MPIG0024_simpleDemo/d
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sam/cmake/d/build
+CMAKE_BINARY_DIR = /home/samuel/soft/MPIG0024_simpleDemo/d/build
 
 # Include any dependencies generated for this target.
 include example/CMakeFiles/sqrtDemoD.dir/depend.make
@@ -54,17 +54,17 @@ include example/CMakeFiles/sqrtDemoD.dir/flags.make
 
 example/CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.o: example/CMakeFiles/sqrtDemoD.dir/flags.make
 example/CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.o: ../core/sqrt.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sam/cmake/d/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/samuel/soft/MPIG0024_simpleDemo/d/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object example/CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.o"
-	cd /home/sam/cmake/d/build/example && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.o -c /home/sam/cmake/d/core/sqrt.cpp
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build/example && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.o -c /home/samuel/soft/MPIG0024_simpleDemo/d/core/sqrt.cpp
 
 example/CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.i"
-	cd /home/sam/cmake/d/build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sam/cmake/d/core/sqrt.cpp > CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.i
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/samuel/soft/MPIG0024_simpleDemo/d/core/sqrt.cpp > CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.i
 
 example/CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.s"
-	cd /home/sam/cmake/d/build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sam/cmake/d/core/sqrt.cpp -o CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.s
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/samuel/soft/MPIG0024_simpleDemo/d/core/sqrt.cpp -o CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.s
 
 example/CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.o.requires:
 .PHONY : example/CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.o.requires
@@ -77,17 +77,17 @@ example/CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.o.provides.build: example/CMak
 
 example/CMakeFiles/sqrtDemoD.dir/demo.cpp.o: example/CMakeFiles/sqrtDemoD.dir/flags.make
 example/CMakeFiles/sqrtDemoD.dir/demo.cpp.o: ../example/demo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sam/cmake/d/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/samuel/soft/MPIG0024_simpleDemo/d/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object example/CMakeFiles/sqrtDemoD.dir/demo.cpp.o"
-	cd /home/sam/cmake/d/build/example && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sqrtDemoD.dir/demo.cpp.o -c /home/sam/cmake/d/example/demo.cpp
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build/example && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sqrtDemoD.dir/demo.cpp.o -c /home/samuel/soft/MPIG0024_simpleDemo/d/example/demo.cpp
 
 example/CMakeFiles/sqrtDemoD.dir/demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sqrtDemoD.dir/demo.cpp.i"
-	cd /home/sam/cmake/d/build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sam/cmake/d/example/demo.cpp > CMakeFiles/sqrtDemoD.dir/demo.cpp.i
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/samuel/soft/MPIG0024_simpleDemo/d/example/demo.cpp > CMakeFiles/sqrtDemoD.dir/demo.cpp.i
 
 example/CMakeFiles/sqrtDemoD.dir/demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sqrtDemoD.dir/demo.cpp.s"
-	cd /home/sam/cmake/d/build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sam/cmake/d/example/demo.cpp -o CMakeFiles/sqrtDemoD.dir/demo.cpp.s
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/samuel/soft/MPIG0024_simpleDemo/d/example/demo.cpp -o CMakeFiles/sqrtDemoD.dir/demo.cpp.s
 
 example/CMakeFiles/sqrtDemoD.dir/demo.cpp.o.requires:
 .PHONY : example/CMakeFiles/sqrtDemoD.dir/demo.cpp.o.requires
@@ -111,7 +111,7 @@ bin/sqrtDemoD: example/CMakeFiles/sqrtDemoD.dir/demo.cpp.o
 bin/sqrtDemoD: example/CMakeFiles/sqrtDemoD.dir/build.make
 bin/sqrtDemoD: example/CMakeFiles/sqrtDemoD.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../bin/sqrtDemoD"
-	cd /home/sam/cmake/d/build/example && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sqrtDemoD.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build/example && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sqrtDemoD.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 example/CMakeFiles/sqrtDemoD.dir/build: bin/sqrtDemoD
@@ -122,10 +122,10 @@ example/CMakeFiles/sqrtDemoD.dir/requires: example/CMakeFiles/sqrtDemoD.dir/demo
 .PHONY : example/CMakeFiles/sqrtDemoD.dir/requires
 
 example/CMakeFiles/sqrtDemoD.dir/clean:
-	cd /home/sam/cmake/d/build/example && $(CMAKE_COMMAND) -P CMakeFiles/sqrtDemoD.dir/cmake_clean.cmake
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build/example && $(CMAKE_COMMAND) -P CMakeFiles/sqrtDemoD.dir/cmake_clean.cmake
 .PHONY : example/CMakeFiles/sqrtDemoD.dir/clean
 
 example/CMakeFiles/sqrtDemoD.dir/depend:
-	cd /home/sam/cmake/d/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sam/cmake/d /home/sam/cmake/d/example /home/sam/cmake/d/build /home/sam/cmake/d/build/example /home/sam/cmake/d/build/example/CMakeFiles/sqrtDemoD.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/samuel/soft/MPIG0024_simpleDemo/d /home/samuel/soft/MPIG0024_simpleDemo/d/example /home/samuel/soft/MPIG0024_simpleDemo/d/build /home/samuel/soft/MPIG0024_simpleDemo/d/build/example /home/samuel/soft/MPIG0024_simpleDemo/d/build/example/CMakeFiles/sqrtDemoD.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : example/CMakeFiles/sqrtDemoD.dir/depend
 

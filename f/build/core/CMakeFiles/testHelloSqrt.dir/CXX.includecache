@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/samuel/soft/MPIG0024_simpleDemo/f/core/hello/include/sayHello.h
+stdio.h
+-
+
+/home/samuel/soft/MPIG0024_simpleDemo/f/core/sqrt/include/sqrt.h
+math.h
+-
+
+/home/samuel/soft/MPIG0024_simpleDemo/f/core/test/testHelloSqrt.cpp
+stdio.h
+-
+../sqrt/include/sqrt.h
+/home/samuel/soft/MPIG0024_simpleDemo/f/core/sqrt/include/sqrt.h
+../hello/include/sayHello.h
+/home/samuel/soft/MPIG0024_simpleDemo/f/core/hello/include/sayHello.h
+

@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sam/cmake/d
+CMAKE_SOURCE_DIR = /home/samuel/soft/MPIG0024_simpleDemo/d
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sam/cmake/d/build
+CMAKE_BINARY_DIR = /home/samuel/soft/MPIG0024_simpleDemo/d/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/sam/cmake/d/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sam/cmake/d/build/CMakeFiles /home/sam/cmake/d/build/example/CMakeFiles/progress.marks
-	cd /home/sam/cmake/d/build && $(MAKE) -f CMakeFiles/Makefile2 example/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sam/cmake/d/build/CMakeFiles 0
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/samuel/soft/MPIG0024_simpleDemo/d/build/CMakeFiles /home/samuel/soft/MPIG0024_simpleDemo/d/build/example/CMakeFiles/progress.marks
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build && $(MAKE) -f CMakeFiles/Makefile2 example/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samuel/soft/MPIG0024_simpleDemo/d/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/sam/cmake/d/build && $(MAKE) -f CMakeFiles/Makefile2 example/clean
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build && $(MAKE) -f CMakeFiles/Makefile2 example/clean
 .PHONY : clean
 
 # The main clean target
@@ -88,22 +88,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/sam/cmake/d/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/sam/cmake/d/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/sam/cmake/d/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 example/CMakeFiles/sqrtDemoD.dir/rule:
-	cd /home/sam/cmake/d/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/sqrtDemoD.dir/rule
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/sqrtDemoD.dir/rule
 .PHONY : example/CMakeFiles/sqrtDemoD.dir/rule
 
 # Convenience name for target.
@@ -112,7 +112,7 @@ sqrtDemoD: example/CMakeFiles/sqrtDemoD.dir/rule
 
 # fast build rule for target.
 sqrtDemoD/fast:
-	cd /home/sam/cmake/d/build && $(MAKE) -f example/CMakeFiles/sqrtDemoD.dir/build.make example/CMakeFiles/sqrtDemoD.dir/build
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build && $(MAKE) -f example/CMakeFiles/sqrtDemoD.dir/build.make example/CMakeFiles/sqrtDemoD.dir/build
 .PHONY : sqrtDemoD/fast
 
 __/core/sqrt.o: __/core/sqrt.cpp.o
@@ -120,7 +120,7 @@ __/core/sqrt.o: __/core/sqrt.cpp.o
 
 # target to build an object file
 __/core/sqrt.cpp.o:
-	cd /home/sam/cmake/d/build && $(MAKE) -f example/CMakeFiles/sqrtDemoD.dir/build.make example/CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.o
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build && $(MAKE) -f example/CMakeFiles/sqrtDemoD.dir/build.make example/CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.o
 .PHONY : __/core/sqrt.cpp.o
 
 __/core/sqrt.i: __/core/sqrt.cpp.i
@@ -128,7 +128,7 @@ __/core/sqrt.i: __/core/sqrt.cpp.i
 
 # target to preprocess a source file
 __/core/sqrt.cpp.i:
-	cd /home/sam/cmake/d/build && $(MAKE) -f example/CMakeFiles/sqrtDemoD.dir/build.make example/CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.i
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build && $(MAKE) -f example/CMakeFiles/sqrtDemoD.dir/build.make example/CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.i
 .PHONY : __/core/sqrt.cpp.i
 
 __/core/sqrt.s: __/core/sqrt.cpp.s
@@ -136,7 +136,7 @@ __/core/sqrt.s: __/core/sqrt.cpp.s
 
 # target to generate assembly for a file
 __/core/sqrt.cpp.s:
-	cd /home/sam/cmake/d/build && $(MAKE) -f example/CMakeFiles/sqrtDemoD.dir/build.make example/CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.s
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build && $(MAKE) -f example/CMakeFiles/sqrtDemoD.dir/build.make example/CMakeFiles/sqrtDemoD.dir/__/core/sqrt.cpp.s
 .PHONY : __/core/sqrt.cpp.s
 
 demo.o: demo.cpp.o
@@ -144,7 +144,7 @@ demo.o: demo.cpp.o
 
 # target to build an object file
 demo.cpp.o:
-	cd /home/sam/cmake/d/build && $(MAKE) -f example/CMakeFiles/sqrtDemoD.dir/build.make example/CMakeFiles/sqrtDemoD.dir/demo.cpp.o
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build && $(MAKE) -f example/CMakeFiles/sqrtDemoD.dir/build.make example/CMakeFiles/sqrtDemoD.dir/demo.cpp.o
 .PHONY : demo.cpp.o
 
 demo.i: demo.cpp.i
@@ -152,7 +152,7 @@ demo.i: demo.cpp.i
 
 # target to preprocess a source file
 demo.cpp.i:
-	cd /home/sam/cmake/d/build && $(MAKE) -f example/CMakeFiles/sqrtDemoD.dir/build.make example/CMakeFiles/sqrtDemoD.dir/demo.cpp.i
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build && $(MAKE) -f example/CMakeFiles/sqrtDemoD.dir/build.make example/CMakeFiles/sqrtDemoD.dir/demo.cpp.i
 .PHONY : demo.cpp.i
 
 demo.s: demo.cpp.s
@@ -160,7 +160,7 @@ demo.s: demo.cpp.s
 
 # target to generate assembly for a file
 demo.cpp.s:
-	cd /home/sam/cmake/d/build && $(MAKE) -f example/CMakeFiles/sqrtDemoD.dir/build.make example/CMakeFiles/sqrtDemoD.dir/demo.cpp.s
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build && $(MAKE) -f example/CMakeFiles/sqrtDemoD.dir/build.make example/CMakeFiles/sqrtDemoD.dir/demo.cpp.s
 .PHONY : demo.cpp.s
 
 # Help Target
@@ -189,6 +189,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/sam/cmake/d/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/samuel/soft/MPIG0024_simpleDemo/d/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

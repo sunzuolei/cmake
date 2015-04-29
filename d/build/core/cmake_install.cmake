@@ -1,4 +1,4 @@
-# Install script for directory: /home/sam/cmake/d/core
+# Install script for directory: /home/samuel/soft/MPIG0024_simpleDemo/d/core
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

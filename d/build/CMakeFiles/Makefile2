@@ -50,10 +50,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sam/cmake/d
+CMAKE_SOURCE_DIR = /home/samuel/soft/MPIG0024_simpleDemo/d
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sam/cmake/d/build
+CMAKE_BINARY_DIR = /home/samuel/soft/MPIG0024_simpleDemo/d/build
 
 #=============================================================================
 # Directory level rules for directory core
@@ -92,7 +92,7 @@ example/preinstall:
 example/CMakeFiles/sqrtDemoD.dir/all:
 	$(MAKE) -f example/CMakeFiles/sqrtDemoD.dir/build.make example/CMakeFiles/sqrtDemoD.dir/depend
 	$(MAKE) -f example/CMakeFiles/sqrtDemoD.dir/build.make example/CMakeFiles/sqrtDemoD.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/sam/cmake/d/build/CMakeFiles  1 2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/samuel/soft/MPIG0024_simpleDemo/d/build/CMakeFiles  1 2
 	@echo "Built target sqrtDemoD"
 .PHONY : example/CMakeFiles/sqrtDemoD.dir/all
 
@@ -102,9 +102,9 @@ all: example/CMakeFiles/sqrtDemoD.dir/all
 
 # Build rule for subdir invocation for target.
 example/CMakeFiles/sqrtDemoD.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sam/cmake/d/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samuel/soft/MPIG0024_simpleDemo/d/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/sqrtDemoD.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sam/cmake/d/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samuel/soft/MPIG0024_simpleDemo/d/build/CMakeFiles 0
 .PHONY : example/CMakeFiles/sqrtDemoD.dir/rule
 
 # Convenience name for target.
