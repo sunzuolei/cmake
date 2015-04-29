@@ -1,0 +1,4 @@
+/home/sam/apps/cmake/e/build/core/hello/CMakeFiles/hello.dir
+/home/sam/apps/cmake/e/build/core/sqrt/CMakeFiles/sqrt.dir
+/home/sam/apps/cmake/e/build/core/hello/CMakeFiles/testHello.dir
+/home/sam/apps/cmake/e/build/core/sqrt/CMakeFiles/testSqrt.dir
