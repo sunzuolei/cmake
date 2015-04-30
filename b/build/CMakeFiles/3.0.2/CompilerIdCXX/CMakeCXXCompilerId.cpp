@@ -1,23 +1,38 @@
-#ifdef __cplusplus
-# error "A C++ compiler has been selected for C."
+/* This source file must have a .cpp extension so that all C++ compilers
+   recognize the extension without flags.  Borland does not know .cxx for
+   example.  */
+#ifndef __cplusplus
+# error "A C compiler has been selected for C++."
 #endif
 
 /* Version number components: V=Version, R=Revision, P=Patch
    Version date components:   YYYY=Year, MM=Month,   DD=Day  */
 
-#if defined(__18CXX)
-# define ID_VOID_MAIN
-#endif
+#if defined(__COMO__)
+# define COMPILER_ID "Comeau"
+  /* __COMO_VERSION__ = VRR */
+# define COMPILER_VERSION_MAJOR DEC(__COMO_VERSION__ / 100)
+# define COMPILER_VERSION_MINOR DEC(__COMO_VERSION__ % 100)
 
-#if defined(__INTEL_COMPILER) || defined(__ICC)
+#elif defined(__INTEL_COMPILER) || defined(__ICC)
 # define COMPILER_ID "Intel"
   /* __INTEL_COMPILER = VRP */
 # define COMPILER_VERSION_MAJOR DEC(__INTEL_COMPILER/100)
 # define COMPILER_VERSION_MINOR DEC(__INTEL_COMPILER/10 % 10)
-# define COMPILER_VERSION_PATCH DEC(__INTEL_COMPILER    % 10)
+# if defined(__INTEL_COMPILER_UPDATE)
+#  define COMPILER_VERSION_PATCH DEC(__INTEL_COMPILER_UPDATE)
+# else
+#  define COMPILER_VERSION_PATCH DEC(__INTEL_COMPILER   % 10)
+# endif
 # if defined(__INTEL_COMPILER_BUILD_DATE)
   /* __INTEL_COMPILER_BUILD_DATE = YYYYMMDD */
 #  define COMPILER_VERSION_TWEAK DEC(__INTEL_COMPILER_BUILD_DATE)
+# endif
+# if defined(_MSC_VER)
+#  define SIMULATE_ID "MSVC"
+   /* _MSC_VER = VVRR */
+#  define SIMULATE_VERSION_MAJOR DEC(_MSC_VER / 100)
+#  define SIMULATE_VERSION_MINOR DEC(_MSC_VER % 100)
 # endif
 
 #elif defined(__PATHCC__)
@@ -29,10 +44,21 @@
 # endif
 
 #elif defined(__clang__)
-# define COMPILER_ID "Clang"
+# if defined(__apple_build_version__)
+#  define COMPILER_ID "AppleClang"
+#  define COMPILER_VERSION_TWEAK DEC(__apple_build_version__)
+# else
+#  define COMPILER_ID "Clang"
+# endif
 # define COMPILER_VERSION_MAJOR DEC(__clang_major__)
 # define COMPILER_VERSION_MINOR DEC(__clang_minor__)
 # define COMPILER_VERSION_PATCH DEC(__clang_patchlevel__)
+# if defined(_MSC_VER)
+#  define SIMULATE_ID "MSVC"
+   /* _MSC_VER = VVRR */
+#  define SIMULATE_VERSION_MAJOR DEC(_MSC_VER / 100)
+#  define SIMULATE_VERSION_MINOR DEC(_MSC_VER % 100)
+# endif
 
 #elif defined(__BORLANDC__) && defined(__CODEGEARC_VERSION__)
 # define COMPILER_ID "Embarcadero"
@@ -52,47 +78,47 @@
 # define COMPILER_VERSION_MAJOR DEC(__WATCOMC__ / 100)
 # define COMPILER_VERSION_MINOR DEC(__WATCOMC__ % 100)
 
-#elif defined(__SUNPRO_C)
+#elif defined(__SUNPRO_CC)
 # define COMPILER_ID "SunPro"
-# if __SUNPRO_C >= 0x5100
-   /* __SUNPRO_C = 0xVRRP */
-#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_C>>12)
-#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_C>>4 & 0xFF)
-#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_C    & 0xF)
+# if __SUNPRO_CC >= 0x5100
+   /* __SUNPRO_CC = 0xVRRP */
+#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_CC>>12)
+#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_CC>>4 & 0xFF)
+#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_CC    & 0xF)
 # else
-   /* __SUNPRO_C = 0xVRP */
-#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_C>>8)
-#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_C>>4 & 0xF)
-#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_C    & 0xF)
+   /* __SUNPRO_CC = 0xVRP */
+#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_CC>>8)
+#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_CC>>4 & 0xF)
+#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_CC    & 0xF)
 # endif
 
-#elif defined(__HP_cc)
+#elif defined(__HP_aCC)
 # define COMPILER_ID "HP"
-  /* __HP_cc = VVRRPP */
-# define COMPILER_VERSION_MAJOR DEC(__HP_cc/10000)
-# define COMPILER_VERSION_MINOR DEC(__HP_cc/100 % 100)
-# define COMPILER_VERSION_PATCH DEC(__HP_cc     % 100)
+  /* __HP_aCC = VVRRPP */
+# define COMPILER_VERSION_MAJOR DEC(__HP_aCC/10000)
+# define COMPILER_VERSION_MINOR DEC(__HP_aCC/100 % 100)
+# define COMPILER_VERSION_PATCH DEC(__HP_aCC     % 100)
 
-#elif defined(__DECC)
+#elif defined(__DECCXX)
 # define COMPILER_ID "Compaq"
-  /* __DECC_VER = VVRRTPPPP */
-# define COMPILER_VERSION_MAJOR DEC(__DECC_VER/10000000)
-# define COMPILER_VERSION_MINOR DEC(__DECC_VER/100000  % 100)
-# define COMPILER_VERSION_PATCH DEC(__DECC_VER         % 10000)
+  /* __DECCXX_VER = VVRRTPPPP */
+# define COMPILER_VERSION_MAJOR DEC(__DECCXX_VER/10000000)
+# define COMPILER_VERSION_MINOR DEC(__DECCXX_VER/100000  % 100)
+# define COMPILER_VERSION_PATCH DEC(__DECCXX_VER         % 10000)
 
-#elif defined(__IBMC__)
+#elif defined(__IBMCPP__)
 # if defined(__COMPILER_VER__)
 #  define COMPILER_ID "zOS"
 # else
-#  if __IBMC__ >= 800
+#  if __IBMCPP__ >= 800
 #   define COMPILER_ID "XL"
 #  else
 #   define COMPILER_ID "VisualAge"
 #  endif
-   /* __IBMC__ = VRP */
-#  define COMPILER_VERSION_MAJOR DEC(__IBMC__/100)
-#  define COMPILER_VERSION_MINOR DEC(__IBMC__/10 % 10)
-#  define COMPILER_VERSION_PATCH DEC(__IBMC__    % 10)
+   /* __IBMCPP__ = VRP */
+#  define COMPILER_VERSION_MAJOR DEC(__IBMCPP__/100)
+#  define COMPILER_VERSION_MINOR DEC(__IBMCPP__/10 % 10)
+#  define COMPILER_VERSION_PATCH DEC(__IBMCPP__    % 10)
 # endif
 
 #elif defined(__PGI)
@@ -114,9 +140,6 @@
 # define COMPILER_VERSION_MAJOR DEC(__TI_COMPILER_VERSION__/1000000)
 # define COMPILER_VERSION_MINOR DEC(__TI_COMPILER_VERSION__/1000   % 1000)
 # define COMPILER_VERSION_PATCH DEC(__TI_COMPILER_VERSION__        % 1000)
-
-#elif defined(__TINYC__)
-# define COMPILER_ID "TinyCC"
 
 #elif defined(__SCO_VERSION__)
 # define COMPILER_ID "SCO"
@@ -164,15 +187,6 @@
 #elif defined(__IAR_SYSTEMS_ICC__ ) || defined(__IAR_SYSTEMS_ICC)
 # define COMPILER_ID "IAR"
 
-/* sdcc, the small devices C compiler for embedded systems,
-   http://sdcc.sourceforge.net  */
-#elif defined(SDCC)
-# define COMPILER_ID "SDCC"
-  /* SDCC = VRP */
-#  define COMPILER_VERSION_MAJOR DEC(SDCC/100)
-#  define COMPILER_VERSION_MINOR DEC(SDCC/10 % 10)
-#  define COMPILER_VERSION_PATCH DEC(SDCC    % 10)
-
 #elif defined(_SGI_COMPILER_VERSION) || defined(_COMPILER_VERSION)
 # define COMPILER_ID "MIPSpro"
 # if defined(_SGI_COMPILER_VERSION)
@@ -206,6 +220,13 @@
    because some compilers will just produce instructions to fill the
    array rather than assigning a pointer to a static array.  */
 char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";
+#ifdef SIMULATE_ID
+char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";
+#endif
+
+#ifdef __QNXNTO__
+char const* qnxnto = "INFO" ":" "qnxnto";
+#endif
 
 /* Identify known platforms by name.  */
 #if defined(__linux) || defined(__linux__) || defined(linux)
@@ -360,6 +381,24 @@ char const info_version[] = {
   ']','\0'};
 #endif
 
+/* Construct a string literal encoding the version number components. */
+#ifdef SIMULATE_VERSION_MAJOR
+char const info_simulate_version[] = {
+  'I', 'N', 'F', 'O', ':',
+  's','i','m','u','l','a','t','e','_','v','e','r','s','i','o','n','[',
+  SIMULATE_VERSION_MAJOR,
+# ifdef SIMULATE_VERSION_MINOR
+  '.', SIMULATE_VERSION_MINOR,
+#  ifdef SIMULATE_VERSION_PATCH
+   '.', SIMULATE_VERSION_PATCH,
+#   ifdef SIMULATE_VERSION_TWEAK
+    '.', SIMULATE_VERSION_TWEAK,
+#   endif
+#  endif
+# endif
+  ']','\0'};
+#endif
+
 /* Construct the string literal in pieces to prevent the source from
    getting matched.  Store it in a pointer rather than an array
    because some compilers will just produce instructions to fill the
@@ -369,21 +408,23 @@ char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
 
 
 
+
 /*--------------------------------------------------------------------------*/
 
-#ifdef ID_VOID_MAIN
-void main() {}
-#else
 int main(int argc, char* argv[])
 {
   int require = 0;
   require += info_compiler[argc];
   require += info_platform[argc];
-  require += info_arch[argc];
 #ifdef COMPILER_VERSION_MAJOR
   require += info_version[argc];
+#endif
+#ifdef SIMULATE_ID
+  require += info_simulate[argc];
+#endif
+#ifdef SIMULATE_VERSION_MAJOR
+  require += info_simulate_version[argc];
 #endif
   (void)argv;
   return require;
 }
-#endif

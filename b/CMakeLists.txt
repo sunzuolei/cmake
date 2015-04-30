@@ -19,8 +19,8 @@ MESSAGE(STATUS "Binary dir: " ${PROJECT_BINARY_DIR})
 MESSAGE(STATUS "Source dir: " ${PROJECT_SOURCE_DIR})
 MESSAGE(STATUS ${DIR_SRCS})
 #set extern libraries
-SET(LIBRARIES /usr/lib/x86_64-linux-gnu/libm.so)
+#SET(LIBRARIES /usr/lib/x86_64-linux-gnu/libm.so)
 #add executable file
 ADD_EXECUTABLE(sqrtDemoB ${CPP_FILES})
 #add link library
-TARGET_LINK_LIBRARIES(sqrtDemoB ${LIBRARIES})
+TARGET_LINK_LIBRARIES(sqrtDemoB m)

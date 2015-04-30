@@ -6,3 +6,17 @@
 
 #IncludeRegexTransform: 
 
+/home/sam/apps/cmake/b/include/sqrt.h
+math.h
+-
+
+/home/sam/apps/cmake/b/src/demo.cpp
+stdio.h
+-
+../include/sqrt.h
+/home/sam/apps/cmake/b/include/sqrt.h
+
+/home/sam/apps/cmake/b/src/sqrt.cpp
+../include/sqrt.h
+/home/sam/apps/cmake/b/include/sqrt.h
+
