@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/testHelloSqrt.dir/test/testHelloSqrt.cpp.o  -o ../../testbin/testHelloSqrt  -L/home/sam/apps/cmake/f/lib -rdynamic ../../lib/libhellosqrt.so -Wl,-rpath,/home/sam/apps/cmake/f/lib 

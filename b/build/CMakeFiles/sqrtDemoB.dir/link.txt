@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/sqrtDemoB.dir/src/sqrt.cpp.o CMakeFiles/sqrtDemoB.dir/src/demo.cpp.o  -o sqrtDemoB -rdynamic -lm 

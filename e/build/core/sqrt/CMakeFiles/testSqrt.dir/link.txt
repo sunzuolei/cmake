@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/testSqrt.dir/test/testSqrt.cpp.o  -o ../../../testbin/testSqrt  -L/home/sam/apps/cmake/e/lib -rdynamic -lm ../../../lib/libsqrt.so -Wl,-rpath,/home/sam/apps/cmake/e/lib 

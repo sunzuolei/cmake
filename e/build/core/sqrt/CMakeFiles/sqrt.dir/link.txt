@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC    -shared -Wl,-soname,libsqrt.so -o ../../../lib/libsqrt.so CMakeFiles/sqrt.dir/src/sqrt.cpp.o  -L/home/sam/apps/cmake/e/lib 

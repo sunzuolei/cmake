@@ -1,2 +1,0 @@
-/home/sam/apps/cmake/f/build/core/CMakeFiles/hellosqrt.dir
-/home/sam/apps/cmake/f/build/core/CMakeFiles/testHelloSqrt.dir
