@@ -1,6 +1,10 @@
-./a/build
-./b/build
-./c/build
-./d/build
-./e/build
-./f/build
+a/build
+b/build
+c/build
+d/build
+e/build
+f/build
+g/build
+h/build
+h/lib
+h/testbin

@@ -1,19 +1,20 @@
 set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/lib)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/testbin)
+
 LINK_DIRECTORIES(${LIBRARY_OUTPUT_PATH})
 
-ADD_SUBDIRECTORY(./hello)
-ADD_SUBDIRECTORY(./sqrt)
-project(all_modules)
 # -----------------------------------------------
-# list all subdirectories under "modules/"
+# list all subdirectories under "core/"
 # -----------------------------------------------
-list_subdirectories(LIST_MOLE_MODULES "${CMAKE_SOURCE_DIR}/modules")
+list_subdirectories(LIST_LIB_MODULES "${CMAKE_SOURCE_DIR}/core")
+message(STATUS "LIST_LIB_MODULES =  ${LIST_LIB_MODULES}")
 
 # -----------------------------------------------
 # step into  subdirectories under "modules/"
 # -----------------------------------------------
-foreach(dir ${LIST_MOLE_MODULES})
-  add_subdirectory(${dir})
+foreach(dir ${LIST_LIB_MODULES})
+  	message(STATUS "A dir is detected: ${dir}")
+	add_subdirectory(${dir})
 endforeach(dir)
 
+message(STATUS "CMake comes back")
