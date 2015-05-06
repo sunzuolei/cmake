@@ -11,7 +11,7 @@ int main()
 	printf("**************************\n");
 	printf("Testing sqrt lib:\n a is %.lf, b is %.lf\n\n", a, b);
 	printf("**************************\n");
-	printf("Testing hello lib:\n")
+	printf("Testing hello lib:\n");
 	sayHello();
 	printf("**************************\n");
 	printf("\n");
