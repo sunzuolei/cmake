@@ -8,3 +8,6 @@ g/build
 h/build
 h/lib
 h/testbin
+i/lib
+i/testbin
+i/build
