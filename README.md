@@ -22,4 +22,4 @@ A cmake macro is used to range over all the subdirectories in "core". This demo 
 #### Demo I
 It shows how to test the user lib module with Boost. NOTE: the Boost package should be installed before making the demo otherwise error will occur. While the method of calling a third part package is presented as well. 
 
-For more information, please contact [sunzuolei@gmail.com](sunzuolei@gmail.com)
+**For more information, please contact [sunzuolei@gmail.com](http://dwz.cn/samuel)**
