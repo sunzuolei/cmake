@@ -8,3 +8,4 @@ Demo E: Two separated modules are built as two shared libraries.
 Demo F: All the core modules are made as one library.
 Demo G: The demo links the shared library pre-built by demo F.
 Demo H: A cmake macro is used to range over all the subdirectories in "core". This demo presents the usage of cmake macro.
+Demo I: Shows how to test the user lib module with Boost. NOTE: the Boost package should be installed before making the demo otherwise error will occur.
