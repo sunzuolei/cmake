@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 2.8.3)
+PROJECT(demoF)
+ADD_SUBDIRECTORY(${CMAKE_SOURCE_DIR}/core)
+#find_package(Boost 1.40 REQUIRED COMPONENTS date_time serialization unit_test_framework graph system filesystem regex program_options)
+find_package(Boost)
+if (Boost_FOUND)
+        include_directories(${Boost_INCLUDE_DIRS})
+        #set(BOOST_LIBS ${Boost_LIBRARIES})
+else(Boost_FOUND)
+        message(FATAL_ERROR "The library need boost framefork for unit test, please install it")
+endif(BOOST_FOUND)
+
