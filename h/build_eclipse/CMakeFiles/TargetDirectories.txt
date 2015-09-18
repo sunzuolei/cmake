@@ -1,0 +1,3 @@
+/home/wy/demo/h/build_eclipse/core/hello/CMakeFiles/hello.dir
+/home/wy/demo/h/build_eclipse/core/sqrt/CMakeFiles/sqrt.dir
+/home/wy/demo/h/build_eclipse/core/test/CMakeFiles/testLibDemo.dir
