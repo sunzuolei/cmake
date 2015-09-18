@@ -9,5 +9,8 @@ ADD_EXECUTABLE(testHello ${HELLO_TEST_CPP})
 #SET(LIBRARIES /usr/lib/x86_64-linux-gnu/libm.so)
 TARGET_LINK_LIBRARIES(testHello  hello)
 #TARGET_LINK_LIBRARIES(testSqrt ${LIBRARIES} sqrt)
+<<<<<<< HEAD
 
 set (EXECUTABLE_OUTPUT_PATH "${CMAKE_BINARY_DIR}/bin" )
+=======
+>>>>>>> 4b8c3bb710aea71918ba2b6c43e595d6c36af2f6
