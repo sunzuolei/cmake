@@ -1,0 +1,1 @@
+/home/wy/demo/c/build_eclipse/example/CMakeFiles/sqrtDemoC.dir
