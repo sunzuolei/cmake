@@ -1,2 +1,0 @@
-/home/wy/demo/f/build_eclipse/core/CMakeFiles/hellosqrt.dir
-/home/wy/demo/f/build_eclipse/core/CMakeFiles/testHelloSqrt.dir
