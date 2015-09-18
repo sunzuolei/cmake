@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/testHello.dir/test/testHello.cpp.o  -o ../../bin/testHello  -L/home/wy/demo/e/lib -rdynamic ../../../lib/libhello.so -Wl,-rpath,/home/wy/demo/e/lib 
