@@ -1,1 +1,0 @@
-/usr/bin/c++   -g    CMakeFiles/demoG.dir/src/demo.cpp.o  -o bin/demoG  -L/home/wy/demo/g/../f/lib -rdynamic -lhellosqrt -Wl,-rpath,/home/wy/demo/g/../f/lib 
