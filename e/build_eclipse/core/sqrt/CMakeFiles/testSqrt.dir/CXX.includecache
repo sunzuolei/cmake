@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wy/demo/e/core/sqrt/include/sqrt.h
+math.h
+-
+
+/home/wy/demo/e/core/sqrt/test/testSqrt.cpp
+stdio.h
+-
+../include/sqrt.h
+/home/wy/demo/e/core/sqrt/include/sqrt.h
+
