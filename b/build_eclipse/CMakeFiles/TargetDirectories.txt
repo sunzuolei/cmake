@@ -1,1 +1,0 @@
-/home/wy/demo/b/build_eclipse/CMakeFiles/sqrtDemoB.dir
