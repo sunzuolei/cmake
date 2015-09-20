@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC -g   -shared -Wl,-soname,libhello.so -o ../../../lib/libhello.so CMakeFiles/hello.dir/src/sayHello.cpp.o  -L/home/wy/demo/e/lib 
