@@ -30,4 +30,4 @@ Moreover,"demoH.pro" is placed in current directory.
 #### Demo I
 It shows how to test the user lib module with Boost. NOTE: the Boost package should be installed before making the demo otherwise error will occur. While the method of calling a third part package is presented as well. 
 
-**For more information, please contact [sunzuolei@gmail.com](http://mpig.com.cn)**
+**For more information, please contact [szl@mpig.com.cn](http://mpig.com.cn)**
