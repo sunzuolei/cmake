@@ -4,9 +4,9 @@ The examples show how to develope C++ project with CMake,Eclipse and QtCreator o
 ```
 
 #### Demo A
-All the files are in one directory.  "CMakeLists.txt" and "domeA.pro" is involved.
+All the files are in one directory.  "CMakeLists.txt" is involved.
 #### Demo B
-Two subdirectories are introduced, but "CMakeLists.txt" and "demoB.pro" exists.
+Two subdirectories are introduced, but "CMakeLists.txt"  exist.
 #### Demo C
 Each subdirectory owns one "CMakeLists.txt". The files contained in folder "core" are for library building.
 And the current directory also owns "demoC.pro".
