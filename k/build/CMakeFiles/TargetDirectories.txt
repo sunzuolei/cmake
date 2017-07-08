@@ -1,0 +1,2 @@
+/home/liqi/workspace/cmake/4/build/library/CMakeFiles/hello.dir
+/home/liqi/workspace/cmake/4/build/library/CMakeFiles/hello_static.dir

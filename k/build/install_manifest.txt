@@ -1,0 +1,5 @@
+/home/liqi/workspace/cmake/install_dir/lib/libhello.so.1.2
+/home/liqi/workspace/cmake/install_dir/lib/libhello.so.1
+/home/liqi/workspace/cmake/install_dir/lib/libhello.so
+/home/liqi/workspace/cmake/install_dir/lib/libhello.a
+/home/liqi/workspace/cmake/install_dir/include/hello.h
